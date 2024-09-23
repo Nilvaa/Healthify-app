@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="LOGIN"
+    android:textSize="40dp"
+    android:textStyle="bold"
+    android:fontFamily="@font/marcellus"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="40dp"
+    android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in to continue"
+        android:fontFamily="@font/marcellus"
+        android:layout_marginLeft="40dp"
+        android:textSize="25dp"/>
+    <EditText
+        android:id="@+id/l_uname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edittext"
+        android:fontFamily="@font/marcellus"
+        android:hint="Username"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="8dp"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/green"
+        android:textColorHint="@color/green" />
+    <EditText
+        android:id="@+id/l_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edittext"
+        android:drawableLeft="@drawable/padlock"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/marcellus"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/green"
+        android:textColorHint="@color/green" />
+    <Button
+        android:id="@+id/btnlog"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/marcellus"
+        android:padding="10dp"
+        android:text="SIGN IN"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/tv_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:fontFamily="@font/marcellus"
+        android:text="New to HEALTHIFY ? Sign Up"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/log"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginTop="20dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/log"
+        app:lottie_loop="true" app:lottie_speed="1"/>
+</LinearLayout>

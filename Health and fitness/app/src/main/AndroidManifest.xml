@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.SEND_EMAIL" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/lanchicon"
+        android:label="HEALTHIFY"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/lanchicon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HealthAndFitnessApp"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".admin.Edit_workout"
+            android:exported="false" />
+        <activity
+            android:name=".admin.View_workout_details"
+            android:exported="false" />
+        <activity
+            android:name=".adaptor.Admin_workout_adaptor"
+            android:exported="false" />
+        <activity
+            android:name=".admin.Admin_view_workout"
+            android:exported="false" />
+        <activity
+            android:name=".admin.Edit_nutri_plan"
+            android:exported="false" />
+        <activity
+            android:name=".admin.View_nutri_details"
+            android:exported="false" />
+        <activity
+            android:name=".admin.Admin_view_nutriplan"
+            android:exported="false" />
+        <activity
+            android:name=".user.User_notification"
+            android:exported="false" />
+        <activity
+            android:name=".user.Edit_medicine"
+            android:exported="false" />
+        <activity
+            android:name=".user.User_view_medicine"
+            android:exported="false" />
+        <activity
+            android:name=".adaptor.Medicine_adaptor"
+            android:exported="false" />
+        <activity
+            android:name=".user.User_add_medicine"
+            android:exported="false" />
+        <activity
+            android:name=".user.User_view_work_details"
+            android:exported="false" />
+        <activity
+            android:name=".adaptor.Workout_adaptor"
+            android:exported="false" />
+        <activity
+            android:name=".user.User_view_workout"
+            android:exported="false" />
+        <activity
+            android:name=".user.User_view_nutri_details"
+            android:exported="false" />
+        <activity
+            android:name=".adaptor.Nutri_adaptor"
+            android:exported="false" />
+        <activity
+            android:name=".user.User_view_nutriplan"
+            android:exported="false" />
+        <activity
+            android:name=".admin.User_details"
+            android:exported="false" />
+        <activity
+            android:name=".adaptor.User_adaptor"
+            android:exported="false" />
+        <activity
+            android:name=".admin.Admin_home"
+            android:exported="false" />
+        <activity
+            android:name=".user.Edit_profile"
+            android:exported="false" />
+        <activity
+            android:name=".user.User_Profile"
+            android:exported="false" />
+        <activity
+            android:name=".user.Chatbot"
+            android:exported="false" />
+        <activity
+            android:name=".user.User_home"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="true" />
+        <activity
+            android:name=".user.User_register"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

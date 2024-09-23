@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".adaptor.Medicine_adaptor">
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="10dp"
+            android:padding="20dp"
+            app:cardCornerRadius="20dp"
+            android:id="@+id/cons"
+            android:layout_weight="0.5"
+            android:elevation="20dp">
+            <TextView
+                android:id="@+id/nam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/marcellus"
+                android:hint="Name"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColor="@color/green"
+                android:textColorHint="@color/green" />
+
+            <TextView
+                android:id="@+id/dos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/marcellus"
+                android:hint="Dosage"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:textColor="@color/green"
+                android:textColorHint="@color/green" />
+
+            <TextView
+                android:id="@+id/timday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="110dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/marcellus"
+                android:hint="Time"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:textColor="@color/green"
+                android:textColorHint="@color/green" />
+            <TextView
+                android:id="@+id/food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/marcellus"
+                android:hint="des"
+                android:inputType="textMultiLine"
+                android:layout_marginBottom="20dp"
+                android:padding="5dp"
+                android:textColor="@color/green"
+                android:textColorHint="@color/green" />
+
+            <TextView
+                android:id="@+id/des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="190dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/marcellus"
+                android:hint="des"
+                android:layout_marginBottom="20dp"
+                android:padding="5dp"
+                android:textColor="@color/green"
+                android:textColorHint="@color/green" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="230dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_edit"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/green"
+                    android:fontFamily="@font/marcellus"
+                    android:padding="10dp"
+                    android:text="EDIT"
+                    android:textColor="@color/white" />
+                <Button
+                    android:id="@+id/btn_rem"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/green"
+                    android:fontFamily="@font/marcellus"
+                    android:padding="10dp"
+                    android:text="SET REMINDER"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

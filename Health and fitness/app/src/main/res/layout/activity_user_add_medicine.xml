@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".user.User_add_medicine">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:padding="10dp"
+        android:id="@+id/toolbar">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MEDICINE"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/marcellus"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:layout_marginLeft="310dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/recent"
+            android:id="@+id/log"
+            android:layout_gravity="end"/>
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/nam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edittext"
+        android:fontFamily="@font/marcellus"
+        android:hint="Medicine Name"
+        android:drawablePadding="8dp"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/green"
+        android:textColorHint="@color/green" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time of the Day"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/marcellus"
+        android:textColor="@color/green"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp">
+        <CheckBox
+            android:id="@+id/checkMorning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Morning"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/marcellus"
+            android:textColor="@color/green"/>
+
+        <CheckBox
+            android:id="@+id/checkAfternoon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Afternoon"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/marcellus"
+            android:textColor="@color/green"/>
+
+        <CheckBox
+            android:id="@+id/checkNight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Night"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/marcellus"
+            android:textColor="@color/green"/>
+    </LinearLayout>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/food"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:padding="3dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/marcellus"
+        android:background="@drawable/edittext"
+        android:textColor="@color/green"
+        android:textColorHint="@color/green" />
+    <EditText
+        android:id="@+id/dos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edittext"
+        android:fontFamily="@font/marcellus"
+        android:hint="Dosage"
+        android:drawablePadding="8dp"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/green"
+        android:textColorHint="@color/green" />
+
+    <EditText
+        android:id="@+id/des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edittext"
+        android:fontFamily="@font/marcellus"
+        android:hint="Instructions"
+        android:drawablePadding="8dp"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textColor="@color/green"
+        android:textColorHint="@color/green" />
+
+    <Button
+        android:id="@+id/btnmed"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/marcellus"
+        android:padding="10dp"
+        android:text="ADD MEDICINE"
+        android:textColor="@color/white" />
+
+</LinearLayout>

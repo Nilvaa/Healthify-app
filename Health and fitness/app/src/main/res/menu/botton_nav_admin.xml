@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_user"
+        android:title="Users"
+        android:icon="@drawable/uuu"/>
+    <item
+        android:id="@+id/action_nutri"
+        android:title="Nutri-Plan"
+        android:icon="@drawable/salad"/>
+    <item
+        android:id="@+id/action_work"
+        android:title="Workout"
+        android:icon="@drawable/wor"/>
+</menu>
